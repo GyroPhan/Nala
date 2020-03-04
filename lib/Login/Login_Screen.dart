@@ -20,11 +20,12 @@ class Login_Screen_State extends State<Login_Screen> {
 
   @override
   Widget build(BuildContext context) {
+    ///////////////////////////////////////////////////////////////////////////
     final TextField _txtUserName = TextField(
       decoration: InputDecoration(
         prefixIcon: Container(
           width: 50,
-          child: Icon(Icons.email),
+          child: Icon(Icons.contacts),
         ),
         hintText: 'User Name',
         contentPadding: EdgeInsets.all(10.0),
@@ -44,7 +45,7 @@ class Login_Screen_State extends State<Login_Screen> {
       decoration: InputDecoration(
         prefixIcon: Container(
           width: 50,
-          child: Icon(Icons.pages),
+          child: Icon(Icons.info),
         ),
         hintText: 'Password',
         contentPadding: EdgeInsets.all(10.0),
@@ -62,7 +63,8 @@ class Login_Screen_State extends State<Login_Screen> {
         });
       },
     );
-    // TODO: implement build
+    ///////////////////////////////////////////////////////////////////////////
+
     return Scaffold(
       backgroundColor: Color.fromRGBO(232, 170, 140, 2),
       body: Container(
@@ -113,7 +115,9 @@ class Login_Screen_State extends State<Login_Screen> {
                 child: _txtPassWord,
               ),
               Container(
-                padding: EdgeInsets.only(top: 10.0,),
+                padding: EdgeInsets.only(
+                  top: 10.0,
+                ),
                 constraints: BoxConstraints.loose(Size(double.infinity, 30)),
                 //??
                 alignment: AlignmentDirectional.centerEnd,
@@ -147,7 +151,7 @@ class Login_Screen_State extends State<Login_Screen> {
                       "LOG IN",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
-                    color: Color(0xff3277D8),
+                    color: Color.fromRGBO(186, 85, 78, 2),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(6))),
                   ),
