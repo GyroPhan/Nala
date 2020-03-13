@@ -3,7 +3,7 @@ import 'package:nala/Login/Forgot_Screen.dart';
 import 'package:nala/Login/Sign_up_Screen.dart';
 
 import 'User.dart';
-import '../Home_Screen.dart';
+import '../AppBar_Screen.dart';
 import 'Sign_up_Screen.dart';
 import 'Forgot_Screen.dart';
 
@@ -74,13 +74,10 @@ class Login_Screen_State extends State<Login_Screen> {
           //du scroll
           child: Column(
             children: <Widget>[
-              SizedBox(
-                height: 20.0,
-              ),
               Image.asset(
                 'images/logo.png',
-                height: 270.0,
-                width: 270.0,
+                height: 200.0,
+                width: 200.0,
               ),
               Text(
                 'LOGIN',
@@ -145,7 +142,7 @@ class Login_Screen_State extends State<Login_Screen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Home_Screen()));
+                              builder: (context) => Appbar_Screen()));
                     },
                     child: Text(
                       "LOG IN",
@@ -158,7 +155,7 @@ class Login_Screen_State extends State<Login_Screen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 100.0),
+                padding: const EdgeInsets.only(top: 120.0, bottom: 30.0),
                 child: Container(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +178,7 @@ class Login_Screen_State extends State<Login_Screen> {
                               MaterialPageRoute(
                                   builder: (context) => Sign_up_Screen()));
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),

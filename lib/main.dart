@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:nala/AppBar_Screen.dart';
 
-import 'Home_Screen.dart';
+import 'AppBar_Screen.dart';
 import 'Login/Login_Screen.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,9 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
-      home: Home_Screen() ,
+      home: Appbar_Screen(),
     );
   }
 }
-
